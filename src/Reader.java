@@ -23,7 +23,7 @@ public class Reader {
                         products.add(new Product(s[0],s[1],Integer.parseInt(s[2])));
                         break;
                     case "src\\order_items.csv":
-                        ordersProducts.add(new OrdersProducts(s[0],s[1],Integer.parseInt(s[2])));
+                        ordersProducts.add(new OrdersProducts(s[1],s[0],Integer.parseInt(s[2])));
                         break;
                 }
 
