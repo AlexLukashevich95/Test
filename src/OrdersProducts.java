@@ -1,5 +1,3 @@
-import java.util.Date;
-
 public class OrdersProducts {
     private String idProduct;
     private String idOrder;
@@ -23,5 +21,7 @@ public class OrdersProducts {
         return quantity;
     }
 
-
+    public void setIdProduct(String idProduct) {
+        this.idProduct = idProduct;
+    }
 }

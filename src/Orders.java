@@ -2,9 +2,9 @@ import java.util.Date;
 
 public class Orders {
     private String id;
-    private Date date;
+    private String date;
 
-    public Orders(String id,Date date){
+    public Orders(String id,String date){
         this.id = id;
         this.date = date;
     }
@@ -13,10 +13,15 @@ public class Orders {
         return id;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return date;
     }
 
+    public String getDay(){
+        return date.charAt(8)+""+date.charAt(9);
+    }
 
-
+    public int compareTo(Orders o) {
+        return getDate().compareTo(o.getDate());
+    }
 }
